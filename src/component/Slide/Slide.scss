@@ -1,0 +1,112 @@
+.slide{
+    width: 100%;
+    padding-top: 35%;
+    background-position: top center;
+    background-size: 100%;
+    display: flex;
+    position: relative;
+  
+    .slide-content{
+      position: absolute;
+      top: 15%;
+      left: 0;
+      padding-left: 150px;
+      color:#fffd;
+      width: 50%;
+    
+       h1{
+         padding-top: 10px;
+         padding-bottom: 10px;
+         font-weight: 700;
+         font-size: 2.5rem;
+         line-height: 1;
+         text-shadow: 2px 2px 2px #3b3b3b;
+       }
+       p{
+        padding-bottom: 10px;
+        font-weight: 500;
+        text-shadow: 2px 2px 2px #3b3b3b;
+        overflow: hidden;
+        max-height: 200px;
+       }
+       .btn-watch{
+        border: 4px solid transparent;
+        background-color: #ff0000;
+        color: #ffff;
+        border-radius: 30px;
+        padding: 0.4rem 1.6rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        box-shadow: 0px 0px 7px 8px #ff00004d;
+        transition: box-shadow 0.3s ease;
+        position: relative;
+          &:hover{
+            background-color: #fa5555;
+          }
+       }
+
+    }
+    .slide-poster{
+      position: absolute;
+      right: 0;
+      top: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color:#fffd;
+      width: 50%;
+     
+      img{
+        width:35%;
+        border-radius: 30px;
+        margin-left: 25px;
+        box-shadow:  0px 0px 7px 8px #2b2b2b4d;
+
+      }
+      
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .slide{
+      .slide-content{
+        top: 25%;
+        padding-left: 50px;
+        h1{
+          font-weight: 700;
+          font-size: 1.2rem;
+        }
+        p{
+          max-height: 70px;
+          overflow: hidden;
+        }
+       
+      }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  .slide{
+    .slide-content{
+      top: 25%;
+      padding-left: 50px;
+      h1{
+        font-weight: 500;
+        font-size: 1rem;
+      }
+      p{
+        display: none;
+      }
+      .btn-watch{
+        border: 4px solid transparent;
+        padding: 0.2rem 1.2rem;
+        font-size: 0.8rem;
+        font-weight: 300;
+        box-shadow: 0px 0px 7px 8px #ff00004d;
+        transition: box-shadow 0.3s ease;
+        position: relative;
+       }
+    }
+  }
+}
