@@ -3,7 +3,7 @@ I build this project to learning basic React Js, make single page aplication and
 ## How to run
 - In the project directory, you can run: `npm install`
 - To start app run : `npm start`
-## Screenshot
+
 
 ## Feature
 -Filter movie by genres, country, year,...
