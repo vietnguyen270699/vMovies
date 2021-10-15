@@ -79,7 +79,7 @@ function App() {
             <FAQpage />
           </Route>
           <Route exact path={`/colection`}>
-            <Colection type={type}  getId={getId} />
+            <Colection   getId={getId} />
           </Route>
           <Route exact path={`/${type}/${id}`}>
             <DetailMovie

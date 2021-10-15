@@ -12,19 +12,39 @@
       cursor: pointer;
       margin: 5px;
       overflow: hidden;
-      img {
-        border-radius: 5px;
-        width: 100%;
-        display:block;
-        transition: all .5s ease;
-        &:hover{
-          transform: scale(1.2);
+      position: relative;
+          .btn-delete{
+            position: absolute;
+            display:block;
+            right: 5px;
+            width: 30px;
+            height: 30px;
+            top: 5px;
+            padding: 2px;
+            color:#ffff;
+            background-color: rgb(75, 75, 75);
+            border-radius: 50%;
+            z-index: 5;
+            &:hover{
+              background-color: rgb(192, 0, 0);
+            }
         }
-      }
-      p{
-        display:block;
-        overflow: hidden;
-         max-height: 360px;
+      .poster-img{
+        
+        img {
+          border-radius: 5px;
+          width: 100%;
+          display:block;
+          transition: all .5s ease;
+          &:hover{
+            transform: scale(1.2);
+          }
+        }
+        p{
+          display:block;
+          overflow: hidden;
+           max-height: 360px;
+        }
       }
       .poster-name {
         height: 30px;
@@ -37,6 +57,12 @@
       &:hover .poster-name{
         color: rgb(209, 0, 0);
         text-shadow: 0px 2px 2px rgb(92, 92, 92) ;
+      }
+      .poster-img{
+        position: relative;
+
+          
+
       }
     }
 

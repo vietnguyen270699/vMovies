@@ -6,7 +6,7 @@ import TrailerPopup from "./TrailerPopup";
 const MultipleItems = ({ id, type }) => {
   const [trailer, setTrailer] = useState([]);
   const [videoKey, setVideoKey] = useState("");
-  console.log(videoKey);
+
   useEffect(() => {
     const getTrailer = async () => {
       const url = `

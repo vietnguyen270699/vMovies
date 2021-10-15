@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import AddIcon from "@material-ui/icons/Add";
 import CheckIcon from "@material-ui/icons/Check";
 import FacebookIcon from "@material-ui/icons/Facebook";
+
 import "./DetailMovie.scss";
 import Trailer from "./Trailer";
 import Actor from "./Actor";
@@ -119,6 +120,7 @@ function DetailMovie({ id, type, getCastId, getColection }) {
                        
                           colectionClick({
                                id,
+                               type: type,
                               name: movieDetail.name,
                               title: movieDetail.title,
                               poster_path: movieDetail.poster_path,

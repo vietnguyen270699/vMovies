@@ -10,7 +10,6 @@ function TVPage({ getId }) {
   useEffect(() => {
     const fechtMovie = async () => {
       const url = `https://api.themoviedb.org/3/discover/tv?api_key=5761f00d4efd80b92ba2496773204780&page=${filters.page}&first_air_date_year=${filters.year}`;
-      console.log(url);
       const response = await fetch(url);
       const data = await response.json();
       const { results, total_pages } = data;

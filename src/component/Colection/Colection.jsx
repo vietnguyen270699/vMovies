@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import Poster from "../Poster/Poster";
 import "./Colection.scss";
 import { ColectionContext } from "../context/Colection"
-function Colection({ type, getId }) {
-  // console.log(colection);
-  const { colections } = useContext(ColectionContext);
+function Colection({  getId }) {
+  
+  const { colections} = useContext(ColectionContext);
   return (
     <section className="colection-section">
       <div className="container">
@@ -12,10 +12,11 @@ function Colection({ type, getId }) {
         <h2>Các phim bạn muốn xem:</h2>
             <div>
                 <Poster
-                  type={type}
+               
                   filmData={colections}
                   number={colections.length}
                   getId={getId}
+                  colected={true}
                 />
               
             </div>
